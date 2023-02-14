@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-code-with-quarkus-c550
+  namespace: anjoseph-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:f3073d9de850e9db8347adfac7f7493cc222039cab5d6d550aa16de1e2266357
+        name: my-java-quarkus
+        resources: {}
+status: {}
